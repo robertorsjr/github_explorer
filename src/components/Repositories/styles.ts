@@ -30,11 +30,10 @@ export const Container = styled.div`
   }
 `;
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
   height: 64px;
   width: 64px;
   border-radius: 50%;
-  background: url('https://avatars.githubusercontent.com/u/71423080?s=460&u=a5c60b93356615006839056572a3cca064879b7b&v=4') no-repeat;
   background-size:cover;
 `;
 

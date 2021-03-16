@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 interface RowProps {
   flexDirection : string;
-  justifyContent : string
+  justifyContent : string;
 }
 
 const Row = styled.div`

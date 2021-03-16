@@ -2,13 +2,19 @@ import React from 'react';
 import { FiChevronRight } from 'react-icons/fi'
 import { Container, Avatar, TextContainer } from './styles';
 
-const Repositories: React.FC = () => (
+interface Iprops{
+  img: URL;
+  name: string;
+  description: string;
+}
+
+const Repositories: React.FC<Iprops> = ({img, name, description}) => (
   <Container>
     <a href='test'>
-    <Avatar/>
+    <Avatar src={`${img}`}/>
     <TextContainer>
-      <strong>roberto/unform</strong>
-      <p>bçbabçaçbbçabçabbç</p>
+      <strong>{name}</strong>
+      <p>{description}</p>
     </TextContainer>
     <FiChevronRight size={20}/>
     </a>
