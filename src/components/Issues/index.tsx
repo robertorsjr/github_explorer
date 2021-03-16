@@ -1,19 +1,24 @@
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi'
-import { Link } from 'react-router-dom'
 import { Container, TextContainer } from './styles';
 
-const Issues: React.FC = () => {
+interface Issue {
+  to: string;
+  title: string;
+  login: string;
+}
+
+const Issues: React.FC<Issue> = ({ to, title, login }) => {
   return (
     <Container>
-    <Link to='aaa'>
-    <TextContainer>
-      <strong>name</strong>
-      <p>description</p>
-    </TextContainer>
-    <FiChevronRight size={20}/>
-    </Link>
-  </Container>
+      <a href={`${to}`} target="_blank" rel="noreferrer" >
+        <TextContainer>
+          <strong>{title}</strong>
+          <p>{login}</p>
+        </TextContainer>
+        <FiChevronRight size={20} />
+      </a>
+    </Container>
   );
 }
 

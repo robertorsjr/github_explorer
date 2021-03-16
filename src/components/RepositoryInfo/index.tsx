@@ -1,28 +1,37 @@
 import React from 'react';
-
 import { Container, Avatar, TextContainer } from './styles';
 
-const RepositoryInfo: React.FC = () => {
+interface Repository{
+  img: URL;
+  id: string;
+  name: string;
+  description: string;
+  stars: number;
+  forks: number;
+  issues: number;
+}
+
+const RepositoryInfo: React.FC<Repository> = ({img, id, name, description, stars, forks, issues}) => {
   return (
     <Container>
       <header>
-        <Avatar src='https://avatars.githubusercontent.com/u/71423080?s=460&u=a5c60b93356615006839056572a3cca064879b7b&v=4' alt='beto'/>
+        <Avatar src={`${img}`} alt={id}/>
         <TextContainer>
-          <strong>roberto</strong>
-          <p>descrição</p>
+          <strong>{name}</strong>
+          <p>{description}</p>
         </TextContainer>
       </header>
       <ul>
         <li>
-          <strong>1909</strong>
+          <strong>{stars}</strong>
           <span>stars</span>
         </li>
         <li>
-          <strong>1909</strong>
+          <strong>{forks}</strong>
           <span>stars</span>
         </li>
         <li>
-          <strong>1909</strong>
+          <strong>{issues}</strong>
           <span>stars</span>
         </li>
       </ul>
