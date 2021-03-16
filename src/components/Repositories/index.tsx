@@ -1,5 +1,6 @@
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 import { Container, Avatar, TextContainer } from './styles';
 
 interface Iprops{
@@ -10,14 +11,14 @@ interface Iprops{
 
 const Repositories: React.FC<Iprops> = ({img, name, description}) => (
   <Container>
-    <a href='test'>
+    <Link to={`repository/${name}`}>
     <Avatar src={`${img}`}/>
     <TextContainer>
       <strong>{name}</strong>
       <p>{description}</p>
     </TextContainer>
     <FiChevronRight size={20}/>
-    </a>
+    </Link>
   </Container>
 );
 
