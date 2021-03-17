@@ -24,15 +24,15 @@ const RepositoryInfo: React.FC<Repository> = ({img, id, name, description, stars
       <ul>
         <li>
           <strong>{stars}</strong>
-          <span>stars</span>
+          <span>Stars</span>
         </li>
         <li>
           <strong>{forks}</strong>
-          <span>stars</span>
+          <span>Forks</span>
         </li>
         <li>
           <strong>{issues}</strong>
-          <span>stars</span>
+          <span>Issues Abertas</span>
         </li>
       </ul>
     </Container>
