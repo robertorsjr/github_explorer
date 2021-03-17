@@ -11,7 +11,7 @@ git clone https://github.com/robertorsjr/github_explorer.git
 
 # access folder github_explorer
 
-cd github-explorer
+cd github_explorer
 
 # install dependencies using your favorite package manager
 
