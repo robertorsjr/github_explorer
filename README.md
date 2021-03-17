@@ -27,7 +27,8 @@ yarn start
 
 npm run start
 ```
-# The app should open on "http://localhost:3000" 🎉🎉🎉
+**The app should open on "http://localhost:3000" 🎉🎉🎉**
+#
 
 
 # :pick: Built Using
@@ -44,3 +45,10 @@ npm run start
 
 - [React Icons](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiW56XrjZPpAhUiHbkGHUrjDCMQFjAAegQIARAB&url=https%3A%2F%2Freact-icons.github.io%2Freact-icons%2F&usg=AOvVaw2p26skb8fJ07Tiqs_rtKvr) - Svg Icons library
 #
+
+# :tada: Acknowledgements
+
+- [RocketSeat Team](https://rocketseat.com.br/)
+
+- [Diego Fernandes, CTO at Rocketseat](https://github.com/diego3g)
+
