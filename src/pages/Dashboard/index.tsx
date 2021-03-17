@@ -39,11 +39,10 @@ const Dashboard: React.FC = () => {
     }
 
     try{
-    const response = await api.get<Repository>(`repos/${newRepo}`)
-    const repository = response.data;
-    setRepositories([...repositories , repository]);
-    setInputError('')
-
+      const response = await api.get<Repository>(`repos/${newRepo}`)
+      const repository = response.data;
+      setRepositories([...repositories , repository]);
+      setInputError('')
     }catch(err){
       setInputError('Erro na busca por esse repositório')
     }
