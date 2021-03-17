@@ -4,30 +4,31 @@
 
 # :checkered_flag: Getting Started
 
+```
 # open your terminal/cmd and clone this repository
 
 git clone https://github.com/robertorsjr/github_explorer.git
 
-cd github_explorer
+# access folder github_explorer
 
+cd github-explorer
 
- **install dependencies using your favorite package manager**
+# install dependencies using your favorite package manager
 
 yarn
-
-**or with NPM usign npm install**
-
+# or with NPM usign npm install
 npm install
 
-**run app typing**
+# run app typing
 
 yarn start
 
-**or with NPM**
+#or with NPM
 
 npm run start
+```
+# The app should open on "http://localhost:3000" 🎉🎉🎉
 
-# **The app should open on "http://localhost:3000" 🎉🎉🎉**
 
 # :pick: Built Using
 
